@@ -51,6 +51,16 @@ a {
 	text-align: center;
 }
 
+#story {
+	height: auto;
+}
+
+#map {
+	height:80%;
+	width:100%;
+	margin-left: 1px;
+}
+
 #contact {
 	text-align: center;
 }
