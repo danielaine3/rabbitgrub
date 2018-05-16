@@ -84,8 +84,12 @@ input {
 }
 
 .card {
-	display: inline-block;
-	width: 19%;
+	margin-top: 10px;
+
+}
+
+.card-title {
+	text-align: center;
 }
 
 .icon {
