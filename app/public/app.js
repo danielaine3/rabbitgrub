@@ -11,15 +11,25 @@ function initMap() {
 	});
 }
 
-// var park1 = {lat: 44.9398, lng: -93.2533};
-// var map1;
-// function initMap() {
-// 	map1 = new google.maps.Map(document.getElementById('map1'), {
-//   		center: park1,
-//   		zoom: 15
-// 	});
-// 	var marker1 = new google.maps.Marker({
-// 		position:park1,
-// 		map:map1
-// 	});
-// }
+var events = [
+	{'Date': new Date(2018, 4, 19), 'Title': 'Powderhorn Shark Tank Final', 'Link': 'https://www.facebook.com/events/161369324497953/'},
+];
+
+var settings = {
+    Color: 'teal',
+    LinkColor: 'teal',
+    NavShow: true,
+    NavVertical: false,
+    NavLocation: '',
+    DateTimeShow: true,
+    DateTimeFormat: 'mmm, yyyy',
+    DatetimeLocation: '',
+    EventClick: '',
+    EventTargetWholeDay: false,
+    DisabledDays: [],
+    ModelChange: '',
+};
+
+var element = document.getElementById('caleandar');
+
+caleandar(element, events, settings);

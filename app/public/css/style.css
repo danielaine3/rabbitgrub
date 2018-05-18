@@ -17,15 +17,14 @@ body {
 	height:25%;
 	width:25%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 55px;
     padding:10px;
 }
-
 
 #navbar {
 	background-color: teal;
 	width:100%;
-	height:50px;
+	height:60px;
 	position:fixed;
 	top: 0;
 	z-index: 1;
@@ -53,18 +52,34 @@ a {
 	width:100%;
 }
 
+#headshot {
+	height:200px;
+	width:200px;
+	margin:auto;
+	margin-top: 5px;
+}
+
 #story {
 	height: auto;
 }
 
 #map-container {
-	height:300px;
+	height:380px;
 }
 
 #map {
 	height:80%;
 	width:100%;
 	margin-left: 1px;
+}
+
+#caleandar-container {
+	height:300px;
+}
+
+#caleandar {
+	width: 100%;
+	height:100%;
 }
 
 #contact {
@@ -93,7 +108,7 @@ input {
 }
 
 .card {
-	margin-top: 10px;
+	margin-bottom:10px;
 }
 
 .card-title {
@@ -102,6 +117,7 @@ input {
 
 .social-container {
 	width:100%;
+	margin-top:80px;
 }
 
 .social-media {
