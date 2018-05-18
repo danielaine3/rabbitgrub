@@ -1,5 +1,6 @@
 var park = {lat: 44.9398, lng: -93.2533};
 var map;
+
 function initMap() {
 	map = new google.maps.Map(document.getElementById('map'), {
   		center: park,
@@ -9,8 +10,11 @@ function initMap() {
 		position:park,
 		map:map
 	});
-}
+};
 
+initMap();
+
+var caleandar;
 var events = [
 	{'Date': new Date(2018, 4, 19), 'Title': 'Powderhorn Shark Tank Final', 'Link': 'https://www.facebook.com/events/161369324497953/'},
 ];
