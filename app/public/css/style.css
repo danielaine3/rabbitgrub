@@ -4,6 +4,16 @@ html {
 
 body {
 	min-height: 100%;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+	font-size: 19px;
+}
+
+h5 {
+	font-size: 24px;
+	font-weight: bold;
 }
 
 #index-link {

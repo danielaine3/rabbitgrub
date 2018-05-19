@@ -11,7 +11,6 @@ function initMap() {
 		map:map
 	});
 };
-
 initMap();
 
 var caleandar;
@@ -20,7 +19,7 @@ var events = [
 ];
 
 var settings = {
-    Color: 'teal',
+    Color: 'black',
     LinkColor: 'teal',
     NavShow: true,
     NavVertical: false,
