@@ -66,9 +66,10 @@
 				</h1> -->			
 				<div id="newsletter">
 					<p>Sign up to receive our newsletter!</p>
-					<form>				
+					<form method="POST" action= "https://formspree.io/rabbitgrub@gmail.com">				
 						<input type="email" name="email" placeholder="Email">
 						<br>
+						<input type="hidden" name="_next" value="http://rabbitgrub.com" />
 						<button id="submit" type="submit">Submit</button>
 					</form>
 				</div><!--contact end-->
