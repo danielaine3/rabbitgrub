@@ -56,6 +56,7 @@ pubnub.addListener({message:redraw});
 setInterval(function() {
     pubnub.publish({channel:pnChannel, message:circlePoint(new Date().getTime()/1000)});
   }, 500);
+};
 
 var caleandar;
 var events = [
