@@ -1,6 +1,5 @@
 window.lat = 44.9398;
 window.lng = -93.2533;
-
 var map;
 var marker; 
 var lineCoords = [];
@@ -15,7 +14,6 @@ function initMap() {
 		map:map
 	});
 };
-
 
 var redraw = function(payload) {
     lat = payload.message.lat;
