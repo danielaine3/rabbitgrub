@@ -44,7 +44,7 @@ pubnub.subscribe({channels: [pnChannel]});
 pubnub.addListener({message:redraw});
 
 setInterval(function() {
-    pubnub.publish({channel:pnChannel, message:{lat:window.lat + 0.000, lng:window.lng + 0.001}});
+    pubnub.publish({channel:pnChannel, message:{lat:window.lat + 0.000, lng:window.lng + 0.000001}});
 }, 
 5000);
 
