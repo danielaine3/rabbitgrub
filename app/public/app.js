@@ -1,33 +1,8 @@
-var caleandar;
-var events = [
-    {'Date': new Date(2018, 4, 19), 'Title': 'Powderhorn Shark Tank Final', 'Link': 'https://www.facebook.com/events/161369324497953/'},
-    {'Date': new Date(2018, 7, 4), 'Title': 'Powderhorn Art Fair Day 1', 'Link': 'https://www.facebook.com/powderhornartfair/'},
-    {'Date': new Date(2018, 7, 5), 'Title': 'Powderhorn Art Fair Day 2', 'Link': 'https://www.facebook.com/powderhornartfair/'}
-];
-
-var settings = {
-    Color: 'black',
-    LinkColor: 'teal',
-    NavShow: true,
-    NavVertical: false,
-    NavLocation: '',
-    DateTimeShow: true,
-    DateTimeFormat: 'mmm, yyyy',
-    DatetimeLocation: '',
-    EventClick: '',
-    EventTargetWholeDay: false,
-    DisabledDays: [],
-    ModelChange: '',
-};
-
-var element = document.getElementById('caleandar');
-
-caleandar(element, events, settings);
-
 window.lat = 44.9398;
 window.lng = -93.2533;
 
 var map;
+var marker; 
 var lineCoords = [];
 
 function initMap() {
@@ -35,12 +10,12 @@ function initMap() {
   		center: {lat:lat, lng:lng}, 
   		zoom: 15
 	});
-	var marker = new google.maps.Marker({
+	marker = new google.maps.Marker({
 		position:{lat:lat, lng:lng},
 		map:map
 	});
 };
-initMap();
+
 
 var redraw = function(payload) {
     lat = payload.message.lat;
@@ -49,7 +24,6 @@ var redraw = function(payload) {
     marker.setPosition({lat:lat, lng:lng, alt:0});
 
   lineCoords.push(new google.maps.LatLng(lat, lng));
-
 
     var lineCoordinatesPath = new google.maps.Polyline({
     path: lineCoords,
@@ -70,6 +44,8 @@ pubnub.subscribe({channels: [pnChannel]});
 pubnub.addListener({message:redraw});
 
 setInterval(function() {
-    pubnub.publish({channel:pnChannel, message:{lat:window.lat + 0.001, lng:window.lng + 0.01}});
+    pubnub.publish({channel:pnChannel, message:{lat:window.lat + 0.0001, lng:window.lng + 0.001}});
 }, 
-500);
+5000);
+
+initMap();
