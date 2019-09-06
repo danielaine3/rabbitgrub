@@ -1,105 +1,162 @@
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-	<meta charset= "UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>rabbitGrub | Home</title>
-	<!--Link to reset CSS-->
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>rabbitGrub | Home</title>
+    <!--Link to reset CSS-->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+      integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous"
+    />
     <!--Link to googlefonts-->
-	<link href="https://fonts.googleapis.com/css?family=Caveat|Roboto+Condensed" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat|Roboto+Condensed"
+      rel="stylesheet"
+    />
     <!--Link to CSS-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!--favicon-->
-	<link rel="icon" href="images/favicon.ico">	
-	<!--PubNub-->
-	<script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
-
-</head>
-<body>
-	<div class="row" id="navbar">
-		<ul class="menu">
-			<li id="home">
-				<a href="index.html">Home</a>
-			</li>
-			<li id="about">
-				<a href="about.html">About</a>
-			</li>
-			<li id="track">
-				<a href="track.html">Track the Bike</a>
-			</li>
-			<li id="food">
-				<a href="food.html">Food</a>
-			</li>
-<!-- 			<li id="press">
+    <link rel="icon" href="images/favicon.ico" />
+    <!--PubNub-->
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.19.0.min.js"></script>
+  </head>
+  <body>
+    <div class="row" id="navbar">
+      <ul class="menu">
+        <li id="home">
+          <a href="index.html">Home</a>
+        </li>
+        <li id="about">
+          <a href="about.html">About</a>
+        </li>
+        <li id="track">
+          <a href="track.html">Track the Bike</a>
+        </li>
+        <li id="food">
+          <a href="food.html">Food</a>
+        </li>
+        <!-- 			<li id="press">
 				<a href="press.html">Press</a>
 			</li> -->
-			<li id="contact">
-				<a href="contact.html">Contact</a>
-			</li>
-		</ul>
-	</div>
+        <li id="contact">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
 
-	<div class="row">
-		<a id="index-link" href="index.html"><img class="logo" src="images/logo.jpg" alt="Rabbit Grub Logo"></a>
-	</div>
+    <div class="row">
+      <a id="index-link" href="index.html"
+        ><img class="logo" src="images/logo.jpg" alt="Rabbit Grub Logo"
+      /></a>
+    </div>
 
-	<div class="container">
-		<div class="row">
-			<div class="col" id="story">
-				<h1 class="section-title"> Our Story </h1>
-				<p>
-					Welcome to Rabbit Grub! The idea is to create a mobile bike food service that offers healthy, plant-based cuisine to everyone from the Powderhorm Park and surrounding neighborhoods this summer in Minneapolis, MN. I want to utilize my love of biking and my obsession with food trucks to create a minimal carbon footprint and lo cost startup buisness model. Rabbit Grub is an environmentally sustainable and cruelty-free, plant-based company geared to people who want to eat more of a plant-based diet. Rabbit Grub bike food cart will offer the community vegan sandwiches and locally made kombucha because very few options exist within the park and surrounding areas for a quick, healthy bite to eat.
-				</p>
-			</div>
-			<div class="col" id="map-container">
-				<h1 class="section-title">Current Location</h1>
-				<div class="row" id="map"></div>
-			</div>
-		</div>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col">
-				<hr>
-				<!-- <h1 class= "section-title" id= "contact-title"> 
+    <div class="container">
+      <div class="row">
+        <div class="col" id="story">
+          <h1 class="section-title">Our Story</h1>
+          <p>
+            Welcome to Rabbit Grub! The idea is to create a mobile bike food
+            service that offers healthy, plant-based cuisine to everyone from
+            the Powderhorm Park and surrounding neighborhoods this summer in
+            Minneapolis, MN. I want to utilize my love of biking and my
+            obsession with food trucks to create a minimal carbon footprint and
+            lo cost startup buisness model. Rabbit Grub is an environmentally
+            sustainable and cruelty-free, plant-based company geared to people
+            who want to eat more of a plant-based diet. Rabbit Grub bike food
+            cart will offer the community vegan sandwiches and locally made
+            kombucha because very few options exist within the park and
+            surrounding areas for a quick, healthy bite to eat.
+          </p>
+        </div>
+        <div class="col" id="map-container">
+          <h1 class="section-title">Current Location</h1>
+          <div class="row" id="map"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <hr />
+          <!-- <h1 class= "section-title" id= "contact-title"> 
 					Contact
-				</h1> -->			
-				<div id="newsletter">
-					<p>Sign up to receive our newsletter!</p>
-					<form method="POST" action= "https://formspree.io/rabbitgrub@gmail.com">				
-						<input type="email" name="email" placeholder="Email">
-						<br>
-						<input type="hidden" name="_next" value="http://rabbitgrub.com" />
-						<button id="submit" type="submit">Submit</button>
-					</form>
-				</div><!--contact end-->
-			</div><!--col end-->
-		</div> <!--row end-->
-		<div class="row social-container">
-			<div class="social-media">
-				<a href="https://www.yelp.com/biz/rabbit-grub-minneapolis?osq=rabbit+grub"><i class="fab fa-yelp icon"></i></a>
-				<a href="https://www.facebook.com/rabbitgrub/"><i class="fab fa-facebook-square icon"></i></a>
-				<a href="https://www.instagram.com/rabbitgrub/"><i class="fab fa-instagram icon"></i></a>
-				<a href="rabbitgrub@gmail.com"><i class="fas fa-envelope-square icon"></i></a>
-			</div>
-		</div> <!--Social media icons end-->
-	</div> <!--container end-->
-	<footer> 
-		&copy;2018
-	</footer>
-	<!--GoogleMaps-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ7N9Rr2KCotrH2mbR7HJgs5z89944mo4&callback=initMap"
-    async defer></script>
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-	<!--Link to FontAwesome-->
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-	<!--Link to Javascript-->
-	<script src="app.js"></script>
-</body>
+				</h1> -->
+          <div id="newsletter">
+            <p>Sign up to receive our newsletter!</p>
+            <form
+              method="POST"
+              action="https://formspree.io/rabbitgrub@gmail.com"
+            >
+              <input type="email" name="email" placeholder="Email" />
+              <br />
+              <input type="hidden" name="_next" value="http://rabbitgrub.com" />
+              <button id="submit" type="submit">Submit</button>
+            </form>
+          </div>
+          <!--contact end-->
+        </div>
+        <!--col end-->
+      </div>
+      <!--row end-->
+      <div class="row social-container">
+        <div class="social-media">
+          <a
+            href="https://www.yelp.com/biz/rabbit-grub-minneapolis?osq=rabbit+grub"
+            ><i class="fab fa-yelp icon"></i
+          ></a>
+          <a href="https://www.facebook.com/rabbitgrub/"
+            ><i class="fab fa-facebook-square icon"></i
+          ></a>
+          <a href="https://www.instagram.com/rabbitgrub/"
+            ><i class="fab fa-instagram icon"></i
+          ></a>
+          <a href="rabbitgrub@gmail.com"
+            ><i class="fas fa-envelope-square icon"></i
+          ></a>
+        </div>
+      </div>
+      <!--Social media icons end-->
+    </div>
+    <!--container end-->
+    <footer>
+      &copy;2018
+    </footer>
+    <!--GoogleMaps-->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqjaD6gdLItUlUIUoxFjkHpjfY9wHjrh4&callback=initMap"
+      async
+      defer
+    ></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+      integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+      integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+      crossorigin="anonymous"
+    ></script>
+    <!--Link to FontAwesome-->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    ></script>
+    <!--Link to Javascript-->
+    <script src="app.js"></script>
+  </body>
 </html>
